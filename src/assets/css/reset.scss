@@ -1,0 +1,27 @@
+@use './common';
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  font-weight: 500;
+  color: var(--fontColorSecondary);
+  text-decoration-color: #bfe2c2;
+  &:hover {
+    text-decoration-thickness: 4px;
+  }
+}
+img {
+  vertical-align: top;
+}

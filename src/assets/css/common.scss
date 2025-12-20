@@ -1,0 +1,33 @@
+:root {
+  --fontColor: #5f5f5f;
+  --fontColorSecondary: #767676;
+  --navbarHeight: 60px;
+  font-family: 'MonoLisa', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // 网站默认颜色和字体
+  background-color: #fcfcfc;
+  color: var(--fontColor);
+
+  /**
+   * 响应式基准字体 - 使用 clamp() 实现流体缩放
+   * clamp(最小值, 理想值, 最大值)
+   * - 12px: 超小屏幕下的最小字体
+   * - 1.2vw: 视口宽度的 1.2%（1000px 屏幕 = 12px，1333px = 16px）
+   * - 16px: 大屏幕下的最大字体
+   * 所有使用 rem 的元素都会随这个基准值等比缩放
+   */
+  font-size: clamp(12px, 1.2vw, 16px);
+}
+
+@font-face {
+  font-family: 'MonoLisa';
+  src: url('@/assets/fonts/MonoLisa-normal.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
